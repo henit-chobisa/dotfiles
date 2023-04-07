@@ -1,4 +1,4 @@
-local Remap = require("palani.keymap")
+local Remap = require("henit.keymap")
 local nnoremap = Remap.nnoremap
 
 nnoremap("<Leader>f", function()
@@ -7,6 +7,10 @@ end)
 
 nnoremap("<Leader>g", function()
   require('telescope.builtin').live_grep()
+end)
+
+nnoremap("<Leader>m", function()
+  require('telescope.builtin').buffers()
 end)
 
 -- telescope settings

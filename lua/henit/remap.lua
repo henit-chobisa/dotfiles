@@ -1,5 +1,5 @@
-local nnoremap = require("palani.keymap").nnoremap
-local vnoremap = require("palani.keymap").vnoremap
+local nnoremap = require("henit.keymap").nnoremap
+local vnoremap = require("henit.keymap").vnoremap
 
 --moving around selected text in visual mode
 vnoremap("J", ":m '>+1<CR>gv=gv")
@@ -13,7 +13,7 @@ nnoremap("<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
     nnoremap("<C-h>", "<C-w>h")
     nnoremap("<C-j>", "<C-w>j")
     nnoremap("<C-k>", "<C-w>k")
-    nnoremap("<C-;>", "<C-w>l")
+    nnoremap("<C-l>", "<C-w>l")
   
   --window size management
     nnoremap("<C-Left>", ":vertical resize -3<CR>")

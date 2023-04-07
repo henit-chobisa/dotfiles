@@ -1,4 +1,4 @@
-local nnoremap = require("palani.keymap").nnoremap
+local nnoremap = require("henit.keymap").nnoremap
 
 local silent = { silent = true }
 
